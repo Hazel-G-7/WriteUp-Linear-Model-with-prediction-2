@@ -1,0 +1,9 @@
+---
+title: "Liner Model with Predicition"
+author: "Hazel" 
+date: "2025-30-25"
+output: html_document
+---
+
+
+
