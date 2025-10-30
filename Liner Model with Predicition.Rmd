@@ -71,3 +71,10 @@ cor(SIMS~GRIP,data=data)
 model.2 <- 2m(SIMS~GRIP,data=data)
 summary.2m(model2)
 ```
+
+### Predict Target Point for Model 2
+
+```{r}
+predict(model.2,target,interval=c("prediction"))
+```
+
