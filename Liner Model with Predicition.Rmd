@@ -137,3 +137,13 @@ anova(model.1,model.3)
 ```
 
 Our P-Value was 0.000004994, which is extremely small; which tells me that 'Model 3' is better than 'Model 1' in a significant difference. 
+
+### Model2~Model3
+
+
+```{r}
+anova(model.2,model.3)
+```
+
+Our P-Value for Model 2 and Model 3 are much smaller than our previous P-Value, being  0.000004994. With the comparison of. 0.000000001495. 
+Which tells me that 'Model 3' is the most accurate model out of both Models 1 & 2. 
