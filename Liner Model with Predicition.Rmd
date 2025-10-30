@@ -87,9 +87,18 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 ### Model3: SIMS~ARM+GRIP 
 
 ```{r}
-basicNN <- ggplot(data,aes(y=SIMS,x=ARM+GRIP))
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM,z=GRIP))
 ```
 
 ```{r} 
-basicNN + geom_point() + ggtitle("SIMS vs ARMS+GRIP") + theme(plot.title = element_text(hjust=0.5, size=20))
+basicNN + geom_point() + ggtitle("SIMS vs ARM vs GRIP") + theme(plot.title = element_text(hjust=0.5, size=20))
 ```
+
+### Numerical Results: Model3
+
+```{r}
+cor(SIMS~GRIP+ARM,data=data)
+```
+
+The correlation number for model 3, (SIMS~GRIP+ARM) is higher compared to model 2(SIMS~GRIP) and model 1 (SIMS~ARM), so the correlation is better when using both models rather than only using one. 
+
