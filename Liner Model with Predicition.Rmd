@@ -78,3 +78,8 @@ summary.2m(model2)
 predict(model.2,target,interval=c("prediction"))
 ```
 
+### Linear Fit for Model2
+
+```{r} 
+basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_text(hjust=0.5, size=20))
+```
