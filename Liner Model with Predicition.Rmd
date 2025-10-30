@@ -102,3 +102,29 @@ cor(SIMS~GRIP+ARM,data=data)
 
 The correlation number for model 3, (SIMS~GRIP+ARM) is higher compared to model 2(SIMS~GRIP) and model 1 (SIMS~ARM), so the correlation is better when using both models rather than only using one. 
 
+### Inferential Results Model3 
+
+```{r}
+model.3 <- 3m(SIMS~GRIP+ARM,data=data)
+summary.3m(model3)
+```
+
+The formula predicting Model 3 is formula -5.433871 + 0.037311*ARM+0.24470*GRIP. 
+
+### Predict Target Point of Model3
+
+
+```{r}
+predict(model.1,target,interval=c("prediction"))
+```
+
+
+```{r}
+predict(model.2,target,interval=c("prediction"))
+```
+
+
+```{r}
+predict(model.3,target,interval=c("prediction"))
+```
+
