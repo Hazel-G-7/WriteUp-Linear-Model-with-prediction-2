@@ -140,7 +140,6 @@ Our P-Value was 0.000004994, which is extremely small; which tells me that 'Mode
 
 ### Model2~Model3
 
-
 ```{r}
 anova(model.2,model.3)
 ```
